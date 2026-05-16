@@ -1,0 +1,55 @@
+.footer {
+    background-color: #003865; /* Dark blue background */
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 2rem 0; /* Responsive padding */
+    margin-bottom:0.7rem;
+    width:10rem;
+}
+
+.container {
+    width: 80%;
+    max-width:50000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.links, .social-media {
+    display: flex;
+    flex-direction: row; /* Arrange links horizontally within each block */
+    gap: 1rem; /* Spacing between links */
+    margin-bottom: 1rem; /* Space below each block */
+}
+
+.links a, .social-media a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem; /* Responsive font size */
+}
+
+.links a:hover, .social-media a:hover {
+    text-decoration: underline;
+}
+
+.bottom-text p {
+    text-align: center;
+    margin-top: 1rem; /* Space above the copyright text */
+    font-size: 0.875rem; /* Smaller font size for less important text */
+}
+
+@media (max-width: 768px) {
+    .container {
+        text-align: center;
+    }
+
+    .links, .social-media {
+        flex-direction: column; /* Stack links vertically on small screens */
+        gap: 0.5rem; /* Space between links */
+    }
+
+    .links a, .social-media a {
+        margin-bottom: 0.5rem; /* Add vertical space on small screens */
+    }
+}

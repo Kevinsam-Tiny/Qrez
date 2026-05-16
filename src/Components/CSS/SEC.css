@@ -1,0 +1,222 @@
+/* .sec{
+    background-color: aliceblue;
+    width: 60%;
+    margin: auto;
+    border-radius: 20px;
+    background-color: #F5F5F5;
+    width: 60%;
+    margin: 1rem auto; 
+    
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    padding: 2rem; 
+}
+
+.secHead{
+    font-size: 64px;
+    font-weight: bold;
+    font-family: "Source Sans 3", Helvetica, Arial, sans-serif;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.secIntro{
+    max-width: 720px;
+    font-size: 22px;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+.uploadQrContainer{
+   
+    margin-top: 20px;
+    background-color: #F7F7F7;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 200px;
+    
+}
+
+.uploadedQrCode{
+    height: 105px;
+    width: 105px;
+}
+
+.uploadedContainer{
+    margin-top: 20px;
+    background-color: #F7F7F7;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 200px;
+}
+
+.chooseAnotherbtn{
+    background-color: #b3cbc3;
+    padding: 2px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chooseAnotherbtn:hover{
+    text-decoration: underline;
+}
+
+.EnCbtn{
+    margin: 25px;
+}
+
+.EnCbtn button{
+    padding: 10px;
+    font-size: 22px;
+    margin: 10px;
+    background-color: #6c757d;
+    cursor: pointer;
+    border-radius: 5px;
+} */
+
+.file-upload-container{
+    display: flex; /* Use Flexbox for centering */
+    flex-direction: row; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    
+    justify-content: center; 
+}
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 16px; /* Base font size for rem calculations */
+}
+
+.sec {
+    text-align: center;
+    padding: 2.5rem 1.25rem; /* 40px 20px converted to rem */
+    max-width: 50rem; /* 800px converted to rem */
+    margin: 0.5rem auto;
+    background-color: #fff;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* 0 4px 8px converted to rem */
+    border-radius: 0.5rem; /* 8px converted to rem */
+}
+
+/* Header and Introduction */
+.secHead {
+    font-size: 1.75rem; /* 28px converted to rem */
+    font-weight: bold;
+    margin-bottom: 0.625rem; /* 10px converted to rem */
+}
+
+.secIntro {
+    font-size: 1rem; /* 16px converted to rem */
+    color: #555;
+    margin-bottom: 1.875rem; /* 30px converted to rem */
+}
+
+/* File Upload Container */
+.uploadQrContainer {
+    border: 0.125rem dashed #cccccc; /* 2px converted to rem */
+    padding: 1.875rem; /* 30px converted to rem */
+    background-color: #fafafa;
+    border-radius: 0.5rem; /* 8px converted to rem */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.uploadQrContainer:hover {
+    background-color: #f0f4ff;
+}
+
+/* Uploaded Image Container */
+.uploadedContainer {
+    margin-top: 1.875rem; /* 30px converted to rem */
+    text-align: center;
+}
+
+.uploadedQrCode {
+    max-width: 12.5rem; /* 200px converted to rem */
+    height: auto;
+    margin-top: 0.625rem; /* 10px converted to rem */
+    border-radius: 0.5rem; /* 8px converted to rem */
+}
+
+/* Button Styles */
+button,
+.chooseAnotherbtn {
+    background-color: rgb(255, 194, 32);
+    color: white;
+    border: none;
+    border-radius: 0.3125rem; /* 5px converted to rem */
+    padding: 0.625rem 1.25rem; /* 10px 20px converted to rem */
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 1.25rem; /* 20px converted to rem */
+}
+
+button:hover,
+.chooseAnotherbtn:hover {
+    background-color: lightslategray;
+    transform: scale(1.05);
+}
+
+.EnCbtn button {
+    padding: 0.75rem 1.5rem; /* 12px 24px converted to rem */
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    margin-left: 0.9rem; /* 0.5rem for margin, in rem */
+    border: 0.0625rem solid #ccc; /* 1px converted to rem */
+    display: inline-block;
+    padding: 0.5rem 1rem; /* 8px 16px converted to rem */
+    cursor: pointer;
+    background-color: lightgrey;
+    color: white;
+    border-radius: 0.3125rem; /* 5px converted to rem */
+    transition: background-color 0.3s;
+}
+
+.custom-file-upload:hover {
+    background-color: lightslategrey;
+}
+a button {
+    background-color: #6c757d;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+a button:hover {
+    background-color: #5a6268;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 48rem) { /* 768px converted to rem */
+    .sec {
+        padding: 1.25rem 0.625rem; /* 20px 10px converted to rem */
+    }
+
+    .uploadQrContainer {
+        padding: 1.25rem; /* 20px converted to rem */
+    }
+
+    .uploadedQrCode {
+        max-width: 9.375rem; /* 150px converted to rem */
+    }
+}

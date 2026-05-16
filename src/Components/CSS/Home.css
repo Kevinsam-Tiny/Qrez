@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+.home {
+    background-color: #F5F5F5;
+    width: 60%;
+    margin: 1rem auto; /* Center the div horizontally */
+    border-radius: 20px;
+    display: flex; /* Use Flexbox for centering */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    padding: 2rem; /* Add padding for spacing around content */
+}
+
+.homehead{
+    font-size: 64px;
+    font-weight: bold;
+    font-family: "Source Sans 3", Helvetica, Arial, sans-serif;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.headIntro{
+    max-width: 720px;
+    font-size: 22px;
+    margin: auto;
+    padding-bottom: 15px;
+}
+.container {
+    padding: 1rem; /* Use rem for consistent spacing */
+    /* background-color: #F7F7F7; */
+    display: flex; /* Enable Flexbox for horizontal alignment */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+    justify-content: space-evenly; /* Evenly distribute space between items */
+    align-items: center; /* Center items vertically */
+}
+
+/* Styles for the unordered list within the container */
+.container ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0; /* Remove default padding from the ul */
+    margin: 0; /* Remove default margin */
+    list-style: none; /* Remove list styling */
+}
+
+/* Styles for individual list items */
+.list {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 0.5rem; /* Add padding for spacing within the items */
+    margin: 0.5rem; /* Add margin for spacing between items */
+    transition: border-color 0.3s ease; /* Add smooth transition for border color */
+}
+
+/* Hover effect for list items */
+.list:hover {
+    border-color: black; /* Change border color to black on hover */
+}
+
+/* Styles for anchor tags */
+.list a {
+    color: black;
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Hover effect for anchor tags */
+.list a:hover {
+    color: black; /* Maintain black color on hover */
+}
+
+/* Styles for card elements */
+.card {
+    display: flex;
+    width: 250px;
+    align-items: center; /* Center items vertically within the card */
+    margin: 0.5rem; /* Add margin for spacing between cards */
+}
+
+/* Styles for images within cards */
+.card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 1rem; /* Add margin to separate image from text */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        width: 100%; /* Make card take full width on small screens */
+        flex-direction: column; /* Stack card content vertically */
+        align-items: center; /* Center content horizontally */
+    }
+
+    .card img {
+        margin-bottom: 0.5rem; /* Add margin below image */
+    }
+}
+
+
+.right{
+    margin: auto;
+}
+
+.createQrSection{
+    margin-top: 20px;
+}
+
+.createSectionHead{
+    font-family: "Source Sans 3", Helvetica, Arial, sans-serif;
+    font-size: 40px;
+}
+
+.createSectionIntro{
+    max-width: 720px;
+    font-size: 18px;
+    margin: auto;
+    padding-bottom: 15px;
+    margin-bottom: 70px;
+}
+
+.createStepImg{
+    height: 300px;
+    width: 150px;
+}
+
+.createStepList{
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.leftCreateSection{
+    height: 400px;
+    width: 400px;
+    text-align: right;
+}
+
+.rightCreateSection{
+    height: 400px;
+    width: 400px;
+    text-align: left;
+}

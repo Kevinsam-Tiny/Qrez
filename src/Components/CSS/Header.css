@@ -1,0 +1,61 @@
+/* General styles for the navigation bar */
+.navbar {
+    background-color: #ffffff; /* Set the background to white */
+    color: #000000; /* Default text color */
+    padding: 1rem; /* Use rem for consistent spacing */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: white; /* White background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 1rem 2rem; /* Padding for content */
+    position: relative; /* Required if using fixed or sticky positioning */
+    z-index: 10; /* Ensure it's above other elements */
+}
+
+/* Styles for the unordered list */
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for list items */
+li {
+    padding: 0.5rem 1rem; /* Use rem for padding */
+    font-size: 1.2rem; /* Relative font size */
+    align-self: center;
+}
+
+/* Styles for anchor tags */
+li a {
+    color: #000000; /* Set link color to black */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition */
+    padding: 0.5rem 1rem; /* Add padding for clickable area */
+    border-radius: 0.25rem; /* Border radius for rounded corners on hover */
+}
+
+/* Hover effect for anchor tags */
+li a:hover {
+    color: #007BFF; /* Change text color to blue on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center;
+    }
+    
+    li {
+        padding: 0.5rem 0; /* Adjust padding for vertical layout */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    li {
+        font-size: 1rem; /* Slightly smaller font size on medium screens */
+    }
+}

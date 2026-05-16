@@ -1,0 +1,81 @@
+*{
+  margin: 0rem;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+.footer {
+ 
+  background-color: #041f41;
+  color: #ffffff;
+  padding: 1rem; /* Use rem for consistent spacing */
+  width: 100%;
+  box-sizing: border-box; /* Include padding and border in element's total width */
+  display: flex;
+  flex-direction: column; /* Default to vertical layout */
+  align-items: center; /* Center content horizontally */
+}
+
+.footer h2 {
+  text-align: center; /* Center text for a cleaner look */
+  margin: 1rem 0; /* Use rem for margin */
+}
+
+.footerCol {
+  display: flex;
+  flex-direction: column; /* Stack columns vertically by default */
+  justify-content: space-around;
+  width: 100%; /* Ensure it takes full width of the footer */
+  max-width: 1200px; /* Limit the maximum width for better readability on large screens */
+  margin: 0 auto; /* Center the content within the footer */
+  padding: 1rem 0; /* Add vertical padding */
+}
+
+.footerCol ul {
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.footerCol ul li {
+  color: white;
+  list-style: none;
+  padding: 0.5rem 0; /* Use rem for consistent spacing */
+  margin: 0; /* Remove additional margin */
+  text-align: center; /* Center align text for uniformity */
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .footerCol {
+      flex-direction: row; /* Switch to horizontal layout on medium and larger screens */
+  }
+  
+  .footerCol ul {
+      text-align: left; /* Align text to left on larger screens */
+  }
+
+  .footerCol ul li {
+      padding: 0.5rem 1rem; /* Add horizontal padding for separation */
+  }
+}
+
+.icon {
+  width: 20px; /* Adjust size as needed */
+  height: 20px; /* Adjust size as needed */
+  margin-right: 0.5rem; /* Space between icon and text */
+}
+a:hover{
+  color: burlywood;
+}
+
+.connectWithus img{
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+}
